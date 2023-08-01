@@ -1,3 +1,8 @@
+ALTER TABLE Mark
+    MODIFY COLUMN mark INT CHECK (mark >= 1 AND mark <= 10),
+    MODIFY COLUMN student_id INT NOT NULL,
+    MODIFY COLUMN subject_id INT NOT NULL;
+
 insert into subject (name, description, grade) values ('Raiders of Atlantis, The', 'Action|Mystery|Sci-Fi', 2);
 insert into subject (name, description, grade) values ('Serving Life', 'Documentary', 3);
 insert into subject (name, description, grade) values ('Thirst for Love, The (Ai no kawaki)', 'Drama', 1);

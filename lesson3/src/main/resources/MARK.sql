@@ -1,3 +1,8 @@
+ALTER TABLE Mark
+    MODIFY COLUMN mark INT CHECK (mark >= 1 AND mark <= 10),
+    MODIFY COLUMN student_id INT NOT NULL,
+    MODIFY COLUMN subject_id INT NOT NULL;
+
 insert into mark (student_id, subject_id, mark) values (609, 396, 10);
 insert into mark (student_id, subject_id, mark) values (874, 52, 3);
 insert into mark (student_id, subject_id, mark) values (112, 248, 5);

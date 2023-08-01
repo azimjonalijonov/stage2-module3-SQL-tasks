@@ -1,3 +1,6 @@
+ALTER TABLE Student
+    MODIFY COLUMN birthday DATE NOT NULL;
+
 insert into student (name, birthday, groupnumber) values ('Fulton Fowden', '1974-03-09', 3);
 insert into student (name, birthday, groupnumber) values ('Kirsti Le Fleming', '1983-12-12', 8);
 insert into student (name, birthday, groupnumber) values ('Kattie Buckler', '1981-01-25', 10);
